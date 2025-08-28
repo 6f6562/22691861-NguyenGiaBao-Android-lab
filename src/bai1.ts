@@ -1,13 +1,7 @@
-export class Person{
-    name: string;
-    age: number;
+export class Person {
+  constructor(protected name: string, protected age: number) {}
 
-    constructor(name: string, age: number) {
-        this.name = name;
-        this.age = age;
-    }
-
-    display(){
-        console.log(`Name: ${this.name}, Age: ${this.age}`);
-    }
+  display() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
 }
