@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.bike = exports.Car = void 0;
-class Car {
+exports.BikeVehicle = exports.CarVehicle = void 0;
+class CarVehicle {
     constructor(brand, year, cc) {
         this.brand = brand;
         this.year = year;
@@ -11,8 +11,8 @@ class Car {
         return `Car - Brand: ${this.brand}, Year: ${this.year}, CC: ${this.cc}`;
     }
 }
-exports.Car = Car;
-class bike {
+exports.CarVehicle = CarVehicle;
+class BikeVehicle {
     constructor(brand, year, type) {
         this.brand = brand;
         this.year = year;
@@ -22,4 +22,4 @@ class bike {
         return `Bike - Brand: ${this.brand}, Year: ${this.year}, Type: ${this.type}`;
     }
 }
-exports.bike = bike;
+exports.BikeVehicle = BikeVehicle;
