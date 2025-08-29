@@ -9,6 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const bai7_1 = require("./bai7");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         //   console.log("Bai1: ");
@@ -29,14 +30,10 @@ function main() {
         //     results.forEach((result) => console.log(result));
         //   });
         //   console.log("Bai7");
-        //   Promise.race([
-        //     simulateTask(1000),
-        //     simulateTask(2000),
-        //     simulateTask(3000),
-        //   ]).then((result) => {
-        //     console.log("First task completed");
-        //     console.log(result);
-        //   });
+        (0, bai7_1.promiseRace)().then((result) => {
+            console.log("First task completed");
+            console.log(result);
+        });
         //   console.log("Bai8");
         //   Promise.resolve(2)
         //     .then((n) => n ** 2)
