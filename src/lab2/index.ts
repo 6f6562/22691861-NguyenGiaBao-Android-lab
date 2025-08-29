@@ -9,34 +9,57 @@ import { promiseChain } from "./bai8";
 import { filterPromise } from "./bai9";
 
 async function main() {
-  //   console.log("Bai1: ");
-  //   console.log(await promise1);
-  //   console.log("Bai2: ");
-  //   console.log(await promise2);
-  //   console.log("Bai3: ");
-  //   console.log(await promise3.catch((error) => error));
-  //   console.log("Bai4: ");
-  //   handleRandomNumber
-  //     .then((result) => console.log(result))
-  //     .catch((error) => console.log(error));
-  //   console.log("Bai5");
-  //   simulateTask(1204).then((result) => console.log(result));
-  //   console.log("Bai6");
-  //   promiseAll().then((results) => {
-  //     console.log("All tasks completed");
-  //     results.forEach((result) => console.log(result));
-  //   });
-  //   console.log("Bai7");
-  //   promiseRace().then((result) => {
-  //     console.log("First task completed");
-  //     console.log(result);
-  //   });
-  //   console.log("Bai8");
-  promiseChain().then((result) => console.log(result));
-  //   console.log("Bai9");
-  //   filterPromise([1, 2, 3, 4, 5]).then((result) => console.log(result));
-  //   console.log("Bai10");
-  //   Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
+  promise1
+    .then((result) => {
+      console.log(result);
+    })
+    .finally(() => {
+      console.log("Bai1 done");
+    });
+  promise2
+    .then((result) => {
+      console.log(result);
+    })
+    .finally(() => {
+      console.log("Bai2 done");
+    });
+
+  promise3
+    .catch((error) => {
+      console.log(error);
+    })
+    .finally(() => {
+      console.log("Bai3 done");
+    });
+  handleRandomNumber
+    .then((result) => console.log(result))
+    .catch((error) => console.log(error))
+    .finally(() => console.log("Bai4 done"));
+  simulateTask(1204)
+    .then((result) => console.log(result))
+    .finally(() => console.log("Bai5 done"));
+  promiseAll()
+    .then((results) => {
+      console.log("All tasks completed");
+      results.forEach((result) => console.log(result));
+    })
+    .finally(() => console.log("Bai6 done"));
+  promiseRace()
+    .then((result) => {
+      console.log("First task completed");
+      console.log(result);
+    })
+    .finally(() => console.log("Bai7 done"));
+
+  promiseChain()
+    .then((result) => console.log(result))
+    .finally(() => console.log("Bai8 done"));
+
+  filterPromise([1, 2, 3, 4, 5])
+    .then((result) => console.log(result))
+    .finally(() => console.log("Bai9 done"));
+
+  Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
 }
 
 main();
