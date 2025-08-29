@@ -5,6 +5,7 @@ import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
 import { promiseAll } from "./bai6";
 import { promiseRace } from "./bai7";
+import { promiseChain } from "./bai8";
 import { filterPromise } from "./bai9";
 
 async function main() {
@@ -26,16 +27,12 @@ async function main() {
   //     results.forEach((result) => console.log(result));
   //   });
   //   console.log("Bai7");
-  promiseRace().then((result) => {
-    console.log("First task completed");
-    console.log(result);
-  });
+  //   promiseRace().then((result) => {
+  //     console.log("First task completed");
+  //     console.log(result);
+  //   });
   //   console.log("Bai8");
-  //   Promise.resolve(2)
-  //     .then((n) => n ** 2)
-  //     .then((n) => n * 2)
-  //     .then((n) => n + 5)
-  //     .then((result) => console.log(result));
+  promiseChain().then((result) => console.log(result));
   //   console.log("Bai9");
   //   filterPromise([1, 2, 3, 4, 5]).then((result) => console.log(result));
   //   console.log("Bai10");

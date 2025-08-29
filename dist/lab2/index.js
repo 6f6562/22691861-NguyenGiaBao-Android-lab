@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const bai7_1 = require("./bai7");
+const bai8_1 = require("./bai8");
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         //   console.log("Bai1: ");
@@ -30,16 +30,12 @@ function main() {
         //     results.forEach((result) => console.log(result));
         //   });
         //   console.log("Bai7");
-        (0, bai7_1.promiseRace)().then((result) => {
-            console.log("First task completed");
-            console.log(result);
-        });
+        //   promiseRace().then((result) => {
+        //     console.log("First task completed");
+        //     console.log(result);
+        //   });
         //   console.log("Bai8");
-        //   Promise.resolve(2)
-        //     .then((n) => n ** 2)
-        //     .then((n) => n * 2)
-        //     .then((n) => n + 5)
-        //     .then((result) => console.log(result));
+        (0, bai8_1.promiseChain)().then((result) => console.log(result));
         //   console.log("Bai9");
         //   filterPromise([1, 2, 3, 4, 5]).then((result) => console.log(result));
         //   console.log("Bai10");
