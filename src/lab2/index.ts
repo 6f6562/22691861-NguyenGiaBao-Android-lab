@@ -3,6 +3,7 @@ import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
+import { promiseAll } from "./bai6";
 import { filterPromise } from "./bai9";
 
 async function main() {
@@ -19,11 +20,7 @@ async function main() {
   //   console.log("Bai5");
   //   simulateTask(1204).then((result) => console.log(result));
   //   console.log("Bai6");
-  //   Promise.all([
-  //     simulateTask(1000),
-  //     simulateTask(2000),
-  //     simulateTask(3000),
-  //   ]).then((results) => {
+  //   promiseAll().then((results) => {
   //     console.log("All tasks completed");
   //     results.forEach((result) => console.log(result));
   //   });

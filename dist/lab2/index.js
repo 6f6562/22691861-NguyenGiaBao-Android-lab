@@ -24,11 +24,7 @@ function main() {
         //   console.log("Bai5");
         //   simulateTask(1204).then((result) => console.log(result));
         //   console.log("Bai6");
-        //   Promise.all([
-        //     simulateTask(1000),
-        //     simulateTask(2000),
-        //     simulateTask(3000),
-        //   ]).then((results) => {
+        //   promiseAll().then((results) => {
         //     console.log("All tasks completed");
         //     results.forEach((result) => console.log(result));
         //   });
