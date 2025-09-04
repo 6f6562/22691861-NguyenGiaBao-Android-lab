@@ -18,6 +18,7 @@ import { downloadFile } from "./bai25";
 import { waitFiveSeconds } from "./bai26";
 import { runTestFailure, runTestSuccess } from "./bai27";
 import { batchProcess } from "./bai28";
+import { queueProcess } from "./bai29";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
@@ -98,6 +99,7 @@ async function main() {
   // await runTestSuccess();
   // await runTestFailure();
   await batchProcess();
+  await queueProcess();
 }
 
 main();
