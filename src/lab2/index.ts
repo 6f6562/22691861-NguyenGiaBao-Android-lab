@@ -1,5 +1,12 @@
 import { promise1 } from "./bai1";
-import { convertEx1, convertEx2, convertEx3, convertEx4 } from "./bai11";
+import {
+  convertEx1,
+  convertEx2,
+  convertEx3,
+  convertEx4,
+  convertEx5,
+  convertEx6,
+} from "./bai11";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -66,6 +73,8 @@ async function main() {
   await convertEx2();
   await convertEx3();
   await convertEx4();
+  await convertEx5();
+  await convertEx6();
 }
 
 main();
