@@ -11,6 +11,7 @@ import { fetchUsers } from "./bai19";
 import { promise2 } from "./bai2";
 import { fetchUserWithTimeout } from "./bai20";
 import { fetchTodo } from "./bai21";
+import { fetchMultipleTodos } from "./bai22";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
@@ -82,7 +83,8 @@ async function main() {
   // await fetchUserWithTimeout(22691861)
   //   .then((user) => console.log("Bai 20:", user))
   //   .catch((error) => console.error("Bai 20 Error:", error.message));
-  fetchTodo();
+  // fetchTodo();
+  fetchMultipleTodos();
 }
 
 main();
