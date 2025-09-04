@@ -3,6 +3,7 @@ import { runConvert } from "./bai11";
 import { asyncCallSimulateTask } from "./bai12";
 import { handleError } from "./bai13";
 import { multiplyBy3After1s } from "./bai14";
+import { callMultiAsyncFunc } from "./bai15";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -63,8 +64,9 @@ async function main() {
   // await runConvert();
   // asyncCallSimulateTask(2000);
   // handleError();
-  const result = await multiplyBy3After1s(5);
-  console.log("Bai 14:", result);
+  // const result = await multiplyBy3After1s(5);
+  // console.log("Bai 14:", result);
+  await callMultiAsyncFunc();
 }
 
 main();
