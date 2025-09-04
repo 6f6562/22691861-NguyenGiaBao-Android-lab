@@ -1,6 +1,7 @@
 import { promise1 } from "./bai1";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
+import { handleRandomNumber } from "./bai4";
 
 export async function convertEx1() {
   const result = await promise1;
@@ -25,9 +26,14 @@ export async function convertEx3() {
 }
 
 export async function convertEx4() {
-  const result = await promise1;
-  console.log(result);
-  console.log("bai 4 await done");
+  try {
+    const result = await handleRandomNumber();
+    console.log("Success:", result);
+  } catch (error) {
+    console.log("Error:", error);
+  } finally {
+    console.log("Bài 4 await done");
+  }
 }
 
 export async function convertEx5() {
