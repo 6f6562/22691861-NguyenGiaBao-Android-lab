@@ -6,6 +6,7 @@ import {
   convertEx4,
   convertEx5,
   convertEx6,
+  convertEx7,
 } from "./bai11";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
@@ -69,12 +70,13 @@ async function main() {
 
   // Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
 
-  await convertEx1();
-  await convertEx2();
-  await convertEx3();
-  await convertEx4();
-  await convertEx5();
-  await convertEx6();
+  // await convertEx1();
+  // await convertEx2();
+  // await convertEx3();
+  // await convertEx4();
+  // await convertEx5();
+  // await convertEx6();
+  await convertEx7();
 }
 
 main();

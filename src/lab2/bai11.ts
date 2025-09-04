@@ -4,6 +4,7 @@ import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
 import { promiseAll } from "./bai6";
+import { promiseRace } from "./bai7";
 
 export async function convertEx1() {
   const result = await promise1();
@@ -51,7 +52,8 @@ export async function convertEx6() {
 }
 
 export async function convertEx7() {
-  const result = await promise1;
+  const result = await promiseRace();
+  console.log("First task completed");
   console.log(result);
   console.log("bai 7 await done");
 }
