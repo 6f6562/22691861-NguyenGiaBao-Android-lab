@@ -15,6 +15,7 @@ import { fetchMultipleTodos } from "./bai22";
 import { fetchCompletedTodos } from "./bai23";
 import { postData } from "./bai24";
 import { downloadFile } from "./bai25";
+import { waitFiveSeconds } from "./bai26";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
@@ -90,7 +91,8 @@ async function main() {
   // await fetchMultipleTodos();
   // await fetchCompletedTodos();
   // await postData();
-  await downloadFile();
+  // await downloadFile();
+  await waitFiveSeconds();
 }
 
 main();
