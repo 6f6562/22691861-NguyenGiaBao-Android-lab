@@ -7,6 +7,7 @@ import {
   convertEx5,
   convertEx6,
   convertEx7,
+  convertEx8,
 } from "./bai11";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
@@ -76,7 +77,8 @@ async function main() {
   // await convertEx4();
   // await convertEx5();
   // await convertEx6();
-  await convertEx7();
+  // await convertEx7();
+  await convertEx8();
 }
 
 main();
