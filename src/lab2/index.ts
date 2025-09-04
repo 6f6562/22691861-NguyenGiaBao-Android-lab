@@ -7,6 +7,7 @@ import { callMultiAsyncFunc } from "./bai15";
 import { callMultiAsyncFuncByPromiseAll } from "./bai16";
 import { callMultiAsyncFuncThenUseForAwait } from "./bai17";
 import { fetchUser } from "./bai18";
+import { fetchUsers } from "./bai19";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -73,6 +74,9 @@ async function main() {
   // await callMultiAsyncFuncByPromiseAll();
   // await callMultiAsyncFuncThenUseForAwait();
   // await fetchUser(22691861).then((user) => console.log("Bai 18:", user));
+  await fetchUsers([1, 2, 3, 4, 5]).then((users) =>
+    console.log("Bai 19:", users)
+  );
 }
 
 main();
