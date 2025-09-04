@@ -1,5 +1,6 @@
 import { promise1 } from "./bai1";
 import { runConvert } from "./bai11";
+import { asyncCallSimulateTask } from "./bai12";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -62,7 +63,8 @@ async function main() {
 
   // Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
 
-  await runConvert();
+  // await runConvert();
+  asyncCallSimulateTask(2000);
 }
 
 main();
