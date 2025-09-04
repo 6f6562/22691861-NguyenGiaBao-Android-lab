@@ -1,7 +1,7 @@
-export function simulateTask(time: number) {
+export const simulateTask = (time: number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve("Task done in " + time + "ms");
     }, time);
   });
-}
+};

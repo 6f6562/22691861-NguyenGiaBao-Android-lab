@@ -4,22 +4,22 @@ import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 
 export async function convertEx1() {
-  const result = await promise1;
+  const result = await promise1();
   console.log(result);
   console.log("bai 1 await done");
 }
 
 export async function convertEx2() {
-  const result = await promise2;
+  const result = await promise2();
   console.log(result);
   console.log("bai 2 await done");
 }
 
 export async function convertEx3() {
   try {
-    await promise3;
+    const result = await promise3();
   } catch (error) {
-    console.log(error);
+    console.log("Error:", error);
   } finally {
     console.log("bai 3 await done");
   }
@@ -32,7 +32,7 @@ export async function convertEx4() {
   } catch (error) {
     console.log("Error:", error);
   } finally {
-    console.log("Bài 4 await done");
+    console.log("bai 4 await done");
   }
 }
 
