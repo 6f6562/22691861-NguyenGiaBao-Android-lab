@@ -20,6 +20,7 @@ import { runTestFailure, runTestSuccess } from "./bai27";
 import { batchProcess } from "./bai28";
 import { queueProcess } from "./bai29";
 import { promise3 } from "./bai3";
+import { handleApiAllSettled } from "./bai30";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
 import { promiseAll } from "./bai6";
@@ -98,8 +99,9 @@ async function main() {
   // await waitFiveSeconds();
   // await runTestSuccess();
   // await runTestFailure();
-  await batchProcess();
-  await queueProcess();
+  // await batchProcess();
+  // await queueProcess();
+  await handleApiAllSettled();
 }
 
 main();

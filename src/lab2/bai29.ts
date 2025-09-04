@@ -1,6 +1,6 @@
 import { simulateTask } from "./bai5";
 
-export const queueProcess = async (): Promise<void> => {
+export const queueProcess = async () => {
   const tasks = [
     () => simulateTask(1000),
     () => simulateTask(2000),
