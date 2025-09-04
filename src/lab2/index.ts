@@ -10,6 +10,7 @@ import { fetchUser } from "./bai18";
 import { fetchUsers } from "./bai19";
 import { promise2 } from "./bai2";
 import { fetchUserWithTimeout } from "./bai20";
+import { fetchTodo } from "./bai21";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
 import { simulateTask } from "./bai5";
@@ -78,9 +79,10 @@ async function main() {
   // await fetchUsers([1, 2, 3, 4, 5]).then((users) =>
   //   console.log("Bai 19:", users)
   // );
-  await fetchUserWithTimeout(22691861)
-    .then((user) => console.log("Bai 20:", user))
-    .catch((error) => console.error("Bai 20 Error:", error.message));
+  // await fetchUserWithTimeout(22691861)
+  //   .then((user) => console.log("Bai 20:", user))
+  //   .catch((error) => console.error("Bai 20 Error:", error.message));
+  fetchTodo();
 }
 
 main();
