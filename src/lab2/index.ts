@@ -1,4 +1,5 @@
 import { promise1 } from "./bai1";
+import { convertEx1 } from "./bai11";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -60,6 +61,8 @@ async function main() {
     .finally(() => console.log("Bai9 done"));
 
   Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
+
+  await convertEx1();
 }
 
 main();
