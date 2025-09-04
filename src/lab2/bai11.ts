@@ -1,4 +1,5 @@
 import { promise1 } from "./bai1";
+import { promise2 } from "./bai2";
 
 export async function convertEx1() {
   const result = await promise1;
@@ -7,9 +8,9 @@ export async function convertEx1() {
 }
 
 export async function convertEx2() {
-  const result = await promise1;
+  const result = await promise2;
   console.log(result);
-  console.log("bai 1 await done");
+  console.log("bai 2 await done");
 }
 
 export async function convertEx3() {
