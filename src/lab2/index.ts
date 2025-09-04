@@ -1,6 +1,7 @@
 import { promise1 } from "./bai1";
 import { runConvert } from "./bai11";
 import { asyncCallSimulateTask } from "./bai12";
+import { handleError } from "./bai13";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -25,7 +26,6 @@ async function main() {
   //   .finally(() => {
   //     console.log("Bai2 done");
   //   });
-
   // promise3
   //   .catch((error) => {
   //     console.log(error);
@@ -52,19 +52,16 @@ async function main() {
   //     console.log(result);
   //   })
   //   .finally(() => console.log("Bai7 done"));
-
   // promiseChain()
   //   .then((result) => console.log(result))
   //   .finally(() => console.log("Bai8 done"));
-
   // filterPromise([1, 2, 3, 4, 5])
   //   .then((result) => console.log(result))
   //   .finally(() => console.log("Bai9 done"));
-
   // Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
-
   // await runConvert();
-  asyncCallSimulateTask(2000);
+  // asyncCallSimulateTask(2000);
+  handleError();
 }
 
 main();
