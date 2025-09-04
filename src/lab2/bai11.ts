@@ -6,6 +6,7 @@ import { simulateTask } from "./bai5";
 import { promiseAll } from "./bai6";
 import { promiseRace } from "./bai7";
 import { promiseChain } from "./bai8";
+import { filterPromise } from "./bai9";
 
 export async function convertEx1() {
   const result = await promise1();
@@ -66,13 +67,31 @@ export async function convertEx8() {
 }
 
 export async function convertEx9() {
-  const result = await promise1;
+  const result = await filterPromise([1, 2, 3, 4, 5]);
   console.log(result);
   console.log("bai 9 await done");
 }
 
 export async function convertEx10() {
-  const result = await promise1;
-  console.log(result);
-  console.log("bai 10 await done");
+  try {
+    const result = await simulateTask(1024);
+    console.log("Success:", result);
+  } catch (error) {
+    console.log("Error:", error);
+  } finally {
+    console.log("bai 10 await done");
+  }
+}
+
+export async function runConvert() {
+  await convertEx1();
+  await convertEx2();
+  await convertEx3();
+  await convertEx4();
+  await convertEx5();
+  await convertEx6();
+  await convertEx7();
+  await convertEx8();
+  await convertEx9();
+  await convertEx10();
 }

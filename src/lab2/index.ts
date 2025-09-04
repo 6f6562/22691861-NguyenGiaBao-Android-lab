@@ -1,14 +1,5 @@
 import { promise1 } from "./bai1";
-import {
-  convertEx1,
-  convertEx2,
-  convertEx3,
-  convertEx4,
-  convertEx5,
-  convertEx6,
-  convertEx7,
-  convertEx8,
-} from "./bai11";
+import { runConvert } from "./bai11";
 import { promise2 } from "./bai2";
 import { promise3 } from "./bai3";
 import { handleRandomNumber } from "./bai4";
@@ -71,14 +62,7 @@ async function main() {
 
   // Promise.resolve("Bai10").finally(() => console.log("Bai10 done"));
 
-  // await convertEx1();
-  // await convertEx2();
-  // await convertEx3();
-  // await convertEx4();
-  // await convertEx5();
-  // await convertEx6();
-  // await convertEx7();
-  await convertEx8();
+  await runConvert();
 }
 
 main();
