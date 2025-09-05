@@ -1,24 +1,23 @@
 {
-  "name": "22691861-nguyengiabao-android",
-  "version": "1.0.0",
-  "description": "",
+  "license": "0BSD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/6f6562/22691861-NguyenGiaBao-Android-lab.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/6f6562/22691861-NguyenGiaBao-Android-lab/issues"
-  },
-  "homepage": "https://github.com/6f6562/22691861-NguyenGiaBao-Android-lab#readme",
   "dependencies": {
-    "ts-node": "^10.9.2"
-  }
+    "expo": "~53.0.22",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.6",
+    "react-native-paper": "4.9.2",
+    "@expo/vector-icons": "^14.1.0",
+    "expo-linear-gradient": "~14.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
