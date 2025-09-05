@@ -1,6 +1,6 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 
-export default function App() {
+export const screen1 = () => {
   return (
     <View style={styles.container}>
       <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
@@ -24,10 +24,10 @@ export default function App() {
           alignItems: 'center',
         }}>
         <TouchableOpacity style={styles.action}>
-          <Text style={{ textAlign: 'center' }}>LOGIN</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 500 }}>LOGIN</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.action}>
-          <Text style={{ textAlign: 'center' }}>SIGN UP</Text>
+          <Text style={{ textAlign: 'center', fontWeight: 500 }}>SIGN UP</Text>
         </TouchableOpacity>
       </View>
     </View>
