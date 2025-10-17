@@ -1,5 +1,5 @@
-import { View, StyleSheet } from "react-native";
 import { Link, Stack } from "expo-router";
+import { StyleSheet, View } from "react-native";
 
 export default function NotFoundScreen() {
   return (
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-
   button: {
     fontSize: 20,
     textDecorationLine: "underline",
